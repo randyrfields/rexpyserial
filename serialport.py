@@ -31,7 +31,9 @@ def main():
         if (len(response)) > 0:
             print(response.rstrip())
             time.sleep(2)
+            print("rcv pass")
         else:
+            print("rcv fail")
             time.sleep(1)
 
 
