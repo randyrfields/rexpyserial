@@ -28,13 +28,13 @@ def main():
         port.write(b'!>busq\n')
         time.sleep(1)
         # response = port.readline()
-        if (len(response)) > 0:
-            print(response.rstrip())
-            time.sleep(2)
-            print("rcv pass")
-        else:
-            print("rcv fail")
-            time.sleep(1)
+        # if (len(response)) > 0:
+        #     print(response.rstrip())
+        #     time.sleep(2)
+        #     print("rcv pass")
+        # else:
+        #     print("rcv fail")
+        #     time.sleep(1)
 
 
 if __name__ == '__main__':
