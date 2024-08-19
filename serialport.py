@@ -27,7 +27,7 @@ def main():
     while True:
         port.write(b'!>busq\n')
         time.sleep(1)
-        response = port.readline()
+        # response = port.readline()
         if (len(response)) > 0:
             print(response.rstrip())
             time.sleep(2)
