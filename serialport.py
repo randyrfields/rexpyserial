@@ -1,5 +1,6 @@
 import serial
 import time
+import cobs
 
 port = '/dev/ttyS1'
 baudrate = 115200
@@ -25,7 +26,8 @@ def main():
     Send request to SysControl
     """
     while True:
-        port.write(b'!')
+        encoded = cobs.encode(b'activate light\x00')
+        port.write(encoded)
         time.sleep(1)
         response = port.readline()
         if (len(response)) > 0:
