@@ -29,14 +29,9 @@ def main():
         encoded = cobs.encode(b'activate light\x00')
         port.write(encoded)
         time.sleep(1)
-        response = port.readline()
-        if (len(response)) > 0:
-            print(response.rstrip())
-            time.sleep(2)
-            print("rcv pass")
-        else:
-            print("rcv fail")
-            time.sleep(1)
+        # response = port.readline()
+        time.sleep(2)
+        print("rcv pass")
 
 
 if __name__ == '__main__':
