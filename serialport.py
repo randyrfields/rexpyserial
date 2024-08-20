@@ -25,7 +25,7 @@ def main():
     Send request to SysControl
     """
     while True:
-        port.write('!')
+        port.write(b'!')
         time.sleep(1)
         response = port.readline()
         if (len(response)) > 0:
