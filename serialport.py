@@ -1,6 +1,6 @@
 import serial
 import time
-import cobs
+from cobs import cobs
 
 port = '/dev/ttyS1'
 baudrate = 115200
