@@ -28,7 +28,7 @@ def main():
     while True:
         # encoded = cobs.encode(b'activate light\x00')
         # port.write(encoded)
-        port.write('A')
+        port.write(b'A')
         time.sleep(1)
         # response = port.readline()
         time.sleep(2)
