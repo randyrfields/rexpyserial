@@ -26,9 +26,8 @@ def main():
     Send request to SysControl
     """
     while True:
-        # encoded = cobs.encode(b'activate light\x00')
-        # port.write(encoded)
-        port.write(b'A')
+        encoded = cobs.encode(b'activate light\x00')
+        port.write(encoded)
         time.sleep(1)
         # response = port.readline()
         time.sleep(2)
